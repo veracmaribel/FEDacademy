@@ -1,0 +1,66 @@
+body{
+	font-family: Verdana;
+	background-color: #2E2E2E;
+	color: white;
+	
+}
+
+.articulo{
+	padding: 35px 20px;
+	text-align: justify;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #CCCCCC;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #9B9A9A;
+}
+
+#ia{
+	background-image: url("C:/Users/FED Academy/Desktop/Martes/img/ia.jpg");
+  	background-repeat: no-repeat;
+  	background-size: 100%;
+  	background-position: center center;
+  	width: 300px;
+  	height: 300px;
+  float: right;
+  padding: 15px 15px;
+}
+
+
+#rn{
+	background-image: url("C:/Users/FED Academy/Desktop/Martes/img/rn.jpg");
+	background-repeat: no-repeat;
+  	background-size: 100%;
+  	background-position: center center;
+  	width: 300px;
+  	height: 300px;
+  float: right;
+  padding: 15px 15px;
+}
+
+input:valid, textarea:valid {
+  background:green;
+}
+input:invalid, textarea:invalid {
+  background:red;
+}

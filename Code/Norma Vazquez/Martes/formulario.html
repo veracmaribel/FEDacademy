@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+
+	<main>
+		<header class="navbar">
+	<ul>
+	  <li><a href="#home">Articulos</a></li>
+	  <li><a href="formulario.html">Formulario</a></li>
+	  <li><a href="video.html">Video</a></li>
+	  <li><a href="about.html">About</a></li>
+	</ul>
+</header>
+		
+		<form>
+			<label>Nombre:</label>
+			<input type="text" name="name" placeholder="Pon tu nombre aqui" minlength="3" maxlength="15" required pattern="[A-Za-z]+" title="Este campo debe contener un minimo de 3 letras y maximo 15.">
+			<br>
+			<br>
+
+			<label>Apellido:</label>
+			<input type="text" name="apellido" minlength="5" maxlength="15" required pattern="[A-Za-z]+" title="Este campo debe contener un minimo de 5 letras y maximo 15.">
+			<br>
+			<br>
+
+			<label>Numero de telefono:</label>
+			<input type="text" name="num_tel" required pattern="[0-9]{10}" title="Tu numero debe contener 10 numeros">
+			<br>
+			<br>
+
+			<input type="submit" name="val" value="Validar">
+
+		</form>
+
+	</main>
+
+</body>
+</html>

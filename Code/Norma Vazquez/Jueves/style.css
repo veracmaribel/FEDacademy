@@ -1,0 +1,58 @@
+#texto{
+    text-align: left;
+    font-size: 0.75rem;
+    margin-left: 15px;
+    color: #fff;
+  }
+
+  #title{
+    text-align: center;
+    color: #ff9500;
+  }
+
+  h2{
+    color:#000;
+    text-align: center;
+    font-size:40px;
+  }
+
+  #img_l1{
+    background: url("http://agencia.donweb.com/wp-content/uploads/2017/05/Playa-del-Carmen-601751-smalltabletRetina-1024x576.jpg");
+    width: 50%;
+    height:500px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float:left;
+    display: block;
+    
+  }
+  
+  #img_l2{
+    background: url("http://www.hdfondos.eu/pictures/2013/0820/1/farm-barn-rustic-sunset-sunrise-mood-mountain-wallpaper-152578.jpg");
+    width: 50%;
+    height:500px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float:left;
+    display: block;
+  }
+  
+  #img_r1{
+    background: url("https://redbibia.files.wordpress.com/2013/02/1972-1920x1080.jpg");
+    width: 50%;
+    height:500px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float:left;
+    display: block;
+  }
+  
+  #img_r2{
+    background: url("http://www.wallpaperk.com/wallpapers/atardecer-en-la-montana-4875.jpg");
+    width: 50%;
+    height:500px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float:left;
+    display: block;
+  }

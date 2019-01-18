@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ativity 1 - Multiverso Marvel</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header class="header">
+			<nav class="menu">
+				<ul>
+					<li><a href="#QueEs">&iquest;Qu&eacute; es el multiverso Marvel&#63;</a></li>
+					<li><a href="#616">Universo Principal</a></li>
+					<li><a href="#1610">Ultimates</a></li>
+					<li><a href="#MCU">Universo Cinematogr&aacute;fico</a></li>
+					<li><a href="#suscribete">Suscribete</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>Multiverso Marvel</h1>
+			<section class="content">
+				<figure>
+					<img alt="" class="images principal"><span>Esta imagen muestra los superh&eacuteroes de Marvel en el universo principal</span></img>
+					<img alt="" class="images ultimate"><span>Esta imagen muestra los superh&eacuteroes de Marvel en el universo ultimate</span></img>
+					<img alt="" class="images mcu"><span>Esta imagen muestra los superh&eacuteroes de Marvel en el cine</span></img>
+				</figure>
+				<article id="QueEs">					
+					<h2>&iquest;Qu&eacute; es el multiverso Marvel&#63;</h2>
+					<p>
+						Dentro de <strong>Marvel Comics</strong>, la mayor&iacute;a de las historias tienen lugar en el ficticio universo Marvel principal, tambi&eacute;n conocido como Universo-616, que a su vez es parte de un multiverso. Cada uno de los componentes dentro de cada universo, guarda un s&iacute;mil con el resto. As&iacute; mismo, cada universo del Multiverso Marvel cuenta con la defensa de un Hechicero Supremo en casi todo momento, designado por el m&iacute;stico trinidad de Vishanti para defender al mundo contra las amenazas principalmente m&aacute;gicas, la naturaleza desde dentro y m&aacute;s all&aacute; y que lleva el ojo de Agamotto.
+					</p>
+				</article>
+				<article id="616">
+					<h3>Universo Principal</h3>
+					<p>
+						Es el universo m&aacute;s importante y el primero en crearse por la editorial. All&iacute; es donde ocurren las m&aacute;s emocionantes y tradicionales aventuras que viven los superh&eacute;roes. Es denominada como <strong>Universo-616</strong>.
+					</p>
+				</article>
+				<article id="1610">
+					<h3>Ultimates</h3>
+					<p>
+						Es un universo en el que se moderniza a los h&eacute;roes m&aacute;s conocidos del universo Marvel principal y donde tienen nuevos or&iacute;genes y todo vuelve a empezar desde cero. En este universo los nombres civiles de los superh&eacute;roes y supervillanos pueden cambiar al de sus contrapartidas cl&aacute;sicas. Adem&aacute;s, pueden cambiar caracter&iacute;sticas f&iacute;sicas. Los superh&eacute;roes m&aacute;s conocidos en este universo son Ultimate Spiderman, Ultimate X-Men, The Ultimates (nombre que se le da a Los Vengadores en este universo), Ultimate Fantastic Four y Ultimate Daredevil. Es denominada como <strong>Universo-1610</strong>.
+					</p>
+				</article>
+				<article id="MCU">
+					<h3>Universo Cinematogr&aacute;fico</h3>
+					<p>
+						Este Universo, denominado <strong>Universo-199999</strong>, es una amalgama del Universo 616 y el Universo Ultimate. Es el que aparece en las pel&iacute;culas que Marvel Studios ha producido desde 2008 hasta la actualidad.
+					</p>
+				</article>
+			</section>
+			<section>
+				<video width="500" controls preload="metadata">
+					<source src="video/videoplayback.mp4" type="video/mp4">					
+						<track label="Espa&ntilde;ol" kind="subtitles" srclang="es" src="C:/Users/FED Academy/Desktop/Activity1/video/subtitles.vtt" default>
+				</video>
+			</section>
+			<section class="suscribete">
+				<h3>Ingresa tus datos para que obtengas m&aacute;s informaci&oacute;n de Marvel.</h3>
+				<form name="formulario" method="get">
+					<label>Nombre:</label>
+					<input type="text" name="nombre" placeholder="Tu Nombre" minlength="3" maxlength="40" required pattern="[A-Za-z0-9]{3,40}"
+         title="Escribe tu nombre"><br>
+					<label>Correo:</label>
+					<input type="text" name="correo" required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+         title="Escribe tu correo. Ejemplo: tucorreo@ejemplo.com"><br>
+					<button>Suscribir</button>
+				</form>
+			</section>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,99 @@
+///////////Title
+.title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+.slogan{
+  font-size: 0.5em;
+  color: 	#FF8C00;
+}
+.title .slogan:before{
+  content: "[";
+  font-size: 3.5em;
+}
+.title .slogan:after{
+  content: "]";
+  font-size: 3.5em;
+}
+////////////////////Body SCSS/////////////////
+.cuadro{
+  font-family: 'Ubuntu', sans-serif;
+  min-height: 400px;
+  color: #ffffff;
+  /*
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  width: 50%;*/
+}
+
+.uno{
+  background: url(http://ucal.edu.pe/sites/default/files/styles/foto_contenidos/public/complemento_carrera/arquitectura_informacion_general.jpg?itok=G7rdpsfi) no-repeat;  
+  background-size: cover;  
+}
+.dos{
+  background: url(https://enlacearquitectura.com/wp-content/uploads/guer7-e1422253965999.jpg) no-repeat;  
+  background-size: cover;
+}
+.tres{
+  background: url(https://ecoinventos.com/wp-content/uploads/2018/06/Arquitectura-simbi%C3%B3tica-dubai.jpg) no-repeat;  
+  background-size: cover;
+}
+.cuatro{
+  background: url(http://www.lustermagazine.com/wp-content/uploads/2017/03/5552889803010-1.png) no-repeat;
+  background-size: cover;
+}
+
+.interno{
+  /*
+  margin: 0 30px;
+  padding-bottom: 30px;
+  */
+  z-index: 1;
+}
+h3{
+  font-size: 3.5em;
+}
+
+.small{
+  font-size: 1.6px;
+  font-style: italic;
+  padding-right: 15px;
+}
+
+.fecha{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+}
+.izq{
+  letter-spacing: 3px;
+}
+.der{
+  letter-spacing: 3px;
+}
+.cuadro:after {
+    content: '\A';
+    position:absolute;
+		width: 100%;
+		height: 100%;
+    top:0; 
+		left:0;
+    opacity: 0;
+}
+.cuadro:hover:after {
+  background:rgba(0,0,0,0.6);
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+.barra{
+  width: 0px;
+  height: 5px;
+  background: #ffffff;
+  margin: 10px 0px;
+  transition: width 0.8s;
+}
+.cuadro:hover .barra{
+  width: 100%;
+}

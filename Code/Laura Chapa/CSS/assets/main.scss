@@ -1,0 +1,154 @@
+$playfair: 'Playfair Display';
+$source: 'Source Sans Pro';
+$base-size: 20px;
+$separator: 10px;
+
+@mixin background($image) {
+  background: url($image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+$one:'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80';
+
+$two: 'https://images.unsplash.com/photo-1476673160081-cf065607f449?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80';
+
+$three: 'https://images.unsplash.com/photo-1531512073830-ba890ca4eba2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=844&q=80';
+
+$four: 'https://images.unsplash.com/photo-1519817914152-22d216bb9170?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=401&q=80';
+
+body {
+  margin: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $playfair;
+}
+
+div, p, span, small {
+  font: {
+    family: $source;
+    size: $base-size - 6;
+  }
+}
+  
+#main-title {
+   text-align: center;
+  div {
+    font-size: $base-size - 5;
+    color: red;
+  }
+  h2 {
+    font-size: $base-size + 15;
+    margin-top: 15px;
+  }
+}
+
+main {
+  display: grid;
+  grid-template: 1fr / 50% 50%;
+  grid-auto-rows: 1fr;
+}
+
+.square {
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: background-color 0.8s ease;
+  
+  h3 {
+    font-size: $base-size * 2;
+    margin: ($base-size - 5) 0;
+  }
+  
+  div {
+    margin-bottom: $separator;
+  }
+  
+  small {
+    font-size: $base-size - 8;
+    letter-spacing: 2px;
+  }
+  
+  .line {
+    background-color: white;
+    height: 3px;
+    width: 0;
+    transition: width 1s ease;
+  }
+  
+  &:hover .line {
+    width: 20%;
+  }
+  
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.flexy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comments {
+  font-style: italic;
+  
+  i {
+    margin: 0 5px;
+  }
+}
+
+#one {
+  @include background($one);
+}
+
+#two {
+  @include background($two);
+}
+
+#three {
+  @include background($three);
+}
+
+#four {
+  @include background($four);
+}
+
+
+.frame {
+  padding: 8px;
+  position: relative;
+  
+  &:hover:after, &:hover:before {
+    width: 10px;
+    border-width: 1.5px;
+  }
+  
+  &:after, &:before {
+    border: 1px solid red;    
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    width: 5px;
+    transition: width 0.8s ease;
+  }
+  
+  &:after {
+    border-left: none;
+    right: 0;
+  }
+  
+  &:before {
+    border-right: none;
+    left: 0;
+  }
+}

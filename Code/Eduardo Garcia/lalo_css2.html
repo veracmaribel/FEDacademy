@@ -1,0 +1,252 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap-grid.css">
+
+<style>
+    * {
+        font-family: helvetica;
+        box-sizing: border-box;
+    }
+
+
+    #top_title::before {
+        content: "[";
+        font-size: 32px;
+        padding: 10px;
+    }
+
+    #top_title::after {
+        content: "]";
+        font-size: 32px;
+        padding: 10px;
+    }
+
+    #top_title {
+        color: orange;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    #sub_title {
+        font-size: 34px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+
+    [data-images_conts] {
+        position: relative;
+        display: inline-block;
+        vertical-align: bottom;
+        width:100%;
+        height: 370px;
+        font-size: 16px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover cover;
+        color: white;
+        text-align: left;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .bk {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0;
+        transition: 0.8s;
+    }
+
+    [data-images_conts]:hover>.bk {
+        background-color: black;
+        opacity: 0.6;
+    }
+
+    .line {
+        width: 0;
+        height: 5px;
+        background-color: white;
+        margin-bottom: 20px;
+        transition: 1s;
+    }
+
+    [data-images_conts]:hover>div>div>.line {
+        width: 50%;
+    }
+
+
+    [data-images_conts="1"] {
+        background-image: url("https://www.jllrealviews.com/wp-content/uploads/2017/01/Keeping-buildings-at-the-top-of-their-game.jpg");
+    }
+
+    [data-images_conts="2"] {
+        background-image: url("https://www.atlantisbahamas.com/media/Things%20To%20Do/Water%20Park/Beaches/Hero/Experiences_Beach.jpg");
+    }
+
+    [data-images_conts="3"] {
+        background-image: url("http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg");
+    }
+
+    [data-images_conts="4"] {
+        background-image: url("https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    }
+
+    .photos_infos_cont {
+        display: inline-block;
+        vertical-align: bottom;
+        padding: 0 25px;
+        height: 100%;
+    }
+
+    h3 {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    h2 {
+        padding-bottom: 25px;
+    }
+
+
+    .photos_individual_wrappers {
+        position: absolute;
+        bottom: 25px;
+    }
+
+
+    .content_section {
+        padding: 20px 0;
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .bottom_sections,
+    .comments {
+        font-size: 18px;
+    }
+
+
+    .float-left {
+        float: left;
+    }
+
+    .float-right {
+        float: right;
+    }
+</style>
+
+
+
+<body>
+
+
+    <div class="text-center">
+        <div id="top_title">Making your Life Easier</div>
+        <h2 class="text-center" id="sub_title">What We Do?</h2>
+    </div>
+
+    <div class="container-fluid" style="font-size:0">
+
+        <div class="row">
+            <!-------->
+            <div class="col-12 col-md-6" data-images_conts="1">
+                <div class="bk"></div>
+                <div class="photos_individual_wrappers">
+                    <div class="photos_infos_cont">
+                        <h3>The waves are high &amp; beautiful</h3>
+                        <div class="line"></div>
+                        <div class="comments">26 Comments <span class="fas fa-comments"></span></div>
+                        <div class="content_section">Meh synth Schlitz, tempor duis single-origin coffee ea next
+                            level
+                            ethnic fingerstache fanny
+                            pack
+                            nostrud. Photo booth anim 8-bit hella, </div>
+                        <div class="bottom_sections">
+                            <p class="float-left">TRAVEL</p>
+                            <p class="float-right">March 15, 2015</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------->
+
+
+
+            <!-------->
+            <div class="col-12 col-md-6" data-images_conts="2">
+                <div class="bk"></div>
+                <div class="photos_individual_wrappers">
+                    <div class="photos_infos_cont">
+                        <h3>At the beach in winter</h3>
+                        <div class="line"></div>
+                        <div class="comments">26 Comments <span class="fas fa-comments"></span></div>
+                        <div class="content_section">Meh synth Schlitz, tempor duis single-origin coffee ea next level
+                            ethnic fingerstache fanny
+                            pack
+                            nostrud. Photo booth anim 8-bit hella, </div>
+                        <div class="bottom_sections">
+                            <p class="float-left">TRAVEL</p>
+                            <p class="float-right">March 15, 2015</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------->
+        </div>
+
+
+        <div class="row">
+        <!-------->
+        <div class="col-12 col-md-6" data-images_conts="3">
+            <div class="bk"></div>
+            <div class="photos_individual_wrappers">
+                <div class="photos_infos_cont">
+                    <h3>The Edge of Nothing Lake</h3>
+                    <div class="line"></div>
+                    <div class="comments">26 Comments <span class="fas fa-comments"></span></div>
+                    <div class="content_section">Meh synth Schlitz, tempor duis single-origin coffee ea next level
+                        ethnic fingerstache fanny
+                        pack
+                        nostrud. Photo booth anim 8-bit hella, </div>
+                    <div class="bottom_sections">
+                        <p class="float-left">TRAVEL</p>
+                        <p class="float-right">March 15, 2015</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------->
+
+
+        <!-------->
+        <div class="col-12 col-md-6" data-images_conts="4">
+            <div class="bk"></div>
+            <div class="photos_individual_wrappers">
+                <div class="photos_infos_cont">
+                    <h3>Five Hundred Twenty-Four Thousand Six Billion Inches</h3>
+                    <div class="line"></div>
+                    <div class="comments">26 Comments <span class="fas fa-comments"></span></div>
+                    <div class="content_section">Meh synth Schlitz, tempor duis single-origin coffee ea next level
+                        ethnic fingerstache fanny
+                        pack
+                        nostrud. Photo booth anim 8-bit hella, </div>
+                    <div class="bottom_sections">
+                        <p class="float-left">TRAVEL</p>
+                        <p class="float-right">March 15, 2015</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------->
+</div>
+
+    </div>
+
+</body>

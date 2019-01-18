@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+   flex-wrap: wrap;
+   margin: auto;
+   justify-content: center;
+   font-family: "Courier New", Courier, monospace;
+   color: #FFFFF0;
+   width: 100%;
+}
+   
+   .__img_top-right {
+     background-image:
+       url("https://lonelyplanetimages.imgix.net/mastheads/GettyImages-538096543_medium.jpg?sharp=10&vib=20&w=1200");
+   display: inline-block;
+   width: 450px;
+   height: 450px;
+   }
+   
+   .__img_top-left {
+   background-image:
+     url("https://media.sabrecdn.com/grandbeachhotel/application/files/6815/3513/1453/GBH-Miami-Push-Your-Beach-920x550-1.jpg");
+   display: inline-block;
+   width: 450px;
+   height: 450px;
+ }
+   .__img_bottom-left {
+   background-image:
+       url("https://odis.homeaway.com/odis/destination/2d62f656-a052-4d93-b06c-156034b02304.hw1.jpg");
+   display: inline-block;
+   width: 450px;
+   height: 450px;
+ }
+   .__img_bottom-right {
+   background-image:
+       url("https://www.lakewanaka.co.nz/assets/Tourism-Operators/images/_resampled/CroppedFocusedImageWzIxMDQsMTEwNiwieSIsMTE2XQ/c6.jpg");
+   display: inline-block;
+   width: 450px;
+   height: 450px;
+ }

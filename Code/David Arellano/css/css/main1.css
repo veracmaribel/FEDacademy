@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Alice|Cantarell|Roboto');
+
+.grid-container {
+ display:grid;
+    grid-template-areas: "head head"
+                       "body body";
+  & h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size:35px;
+  }
+  & .head {
+    grid-area:head; 
+    text-align:center;
+    height: 150px;
+    & .title {
+      margin: auto;
+      color:red;
+      font-family: 'Alice', serif
+    }
+      & .title:Before {
+    Content:"[";
+        margin-right:2px;
+        font-size:25px;
+        font-weight: 400;
+  }
+    & .title:After {
+      content:"]";
+        margin-left:2px;
+        font-size:25px;
+        font-weight: 500;
+    }
+  }
+  & .content {
+    grid-area:body;
+    & .bottom {
+      bottom:4px;
+    }
+  }
+  & .head, .content {
+
+  }
+}
+.wrap {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4fr 4fr;
+  color:white;
+  text-shadow: 1px 1px black, -1px 1px black, 1px -1px black;
+}
+.img1, .img2, .img3, .img4 {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position:relative;
+  height:350px;
+  padding:5px;
+  font-size: 20px;
+  -webkit-transition: background-image 2s; 
+  transition: background-image 2s;
+  & .border {
+    width:0;
+    height:5px;
+    margin-bottom:20px;
+    background-color:white;
+      -webkit-transition: width 2s; 
+  transition: width 2s;
+  }
+  &.img1:hover {
+      background-image:linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),url("http://en.fonditos.com/includes/imagen.php?ruta=/wallpapers/1920x1200/10201.jpg&nombre=palacio_de_moscu-1920x1200.jpg");
+  }
+    &.img2:hover {
+      background-image:linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),url("http://viniliza.com/wp-content/uploads/ciudad-171.jpg");
+  }
+    &.img3:hover {
+      background-image:linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),url("http://1.bp.blogspot.com/_cFCM7vN9kIE/S_cah5xU_aI/AAAAAAAABDU/zk_fn-IA36w/s1600/sydney.jpg");
+  }
+    &.img4:hover {
+      background-image:linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),url("http://s1.1zoom.me/b5050/74/342323-svetik_1280x1024.jpg");
+  }
+  &:hover {
+    & .border {
+    width: 50%;
+    }
+  }
+  h3 {
+font-family: 'Cantarell', sans-serif;
+font-size:40px;
+  color:white;
+  text-shadow: 1px 1px black, -1px 1px black, 1px -1px black;
+    margin-bottom:0;
+}
+  & .fleft {
+  position:absolute;
+  bottom:10px;
+}
+  & .fright {
+    position:absolute;
+  bottom:10px;
+    right:10px;
+  }
+}
+.img1 {
+  background-image: url("http://en.fonditos.com/includes/imagen.php?ruta=/wallpapers/1920x1200/10201.jpg&nombre=palacio_de_moscu-1920x1200.jpg");
+}
+.img2 {
+  background-image: url("http://viniliza.com/wp-content/uploads/ciudad-171.jpg");
+}
+.img3 {
+  background-image: url("http://1.bp.blogspot.com/_cFCM7vN9kIE/S_cah5xU_aI/AAAAAAAABDU/zk_fn-IA36w/s1600/sydney.jpg");
+}
+.img4 {
+  background-image: url("http://s1.1zoom.me/b5050/74/342323-svetik_1280x1024.jpg");
+}
+a {
+  text-decoration: none;
+  color:white;        
+}
+.comments {
+  font-size:25px;
+  padding-bottom:10px;
+}

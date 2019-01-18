@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta>  </meta>
+    <title>
+        Smash Bros Ultimate
+    </title>
+</head>
+<header>
+    <table style="width:100%" >
+        <tr>
+            <th><a href="#SmashBros">Smash Bros Ultimate</a></th>
+            <th><a href="#Video">Video Trailer</a></th>
+            <th><a href="#Characters">Characters</a></th>
+            <th><a href="#Images">Images</a></th>
+            <th><input type="text" name="searchbar" value="search"><br></th>
+
+        </tr>
+    </table>
+</header>
+
+
+<article>
+    <h1>
+        Smash Bros
+    </h1>
+
+    <section>
+    <h2 id="SmashBros">
+        Smash Bros Ultimate
+    </h2>
+        <p background: >
+                Super Smash Bros. is a series of crossover fighting video games published by Nintendo, 
+                and primarily features characters from various franchises of theirs. The series was created 
+                by Masahiro Sakurai, who has directed every game in the series. The gameplay objective differs 
+                from that of traditional fighters in that the aim is to knock opponents off the stage instead 
+                of depleting life bars.
+        </p>
+    </section>
+
+    
+    
+    <section id="Video">
+        <h2>
+            Video Trailer
+         </h2>
+         <video id="smbvideo" controls preload="metadata">
+            <source src ="./smbuvideo.mp4" type="video/mp4">
+            <source src="./smbuvideo.webm" type="video/webm">
+            <track label="English" kind="subtitles" srclang="en" src="./transcript-en.vtt" default>
+            <track label="Español" kind="subtitles" srclang="es" src="./transcript-es.vtt">
+        </video>    
+    </section>
+s
+    <section>       
+            <h2 id="Characters">CHARACTERS</h2>
+        <ul>
+            <li>Mario</li>
+            <li>Fox</li>
+            <li>Link</li>
+            <li>Donkey Kong </li>
+            <li>Kirby</li>
+        </ul>
+    </section>
+
+    <section>
+    <h2 id="Images">
+        Images
+    </h2>
+        <img src= "./smbu.jpg" 
+        alt="Smash Bros Ultimate" width=360px hight=480px  > <br>Smash Bros Ultimate </image>
+    </div>
+    </section>
+
+    <section id="form">
+        <p> Do you want to receive future information about SmashBros? </p>
+        <form>
+                First name:<input type="text" id="firstname" value="John" pattern="(?=.*[a-z])(?=.*[A-Z]).{3,}" 
+                title="Use only letters. Length 3-30" maxlength="30"><br>
+                Last name:<input type="text" id="lastname" value="Snow" pattern="(?=.*[a-z])(?=.*[A-Z]).{3,}" 
+                title="Use only letters. Length 3-30" maxlength="10"><br>
+                e-mail:<input type="email" id="email"  value="john.snow@gmail.com" 
+                title= "Enter your email. Ex: john.snow@gmail.com " pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                placeholder="Enter your email" required><br>
+                Favorite character: <input list="favcharacters">
+                    <datalist id= "favcharacters">
+                        <option value="Mario"></option>
+                        <option value="Fox"></option>
+                        <option value="Donkey Kong"></option>
+                        <option value="Link">
+                        <option value="Kirby">
+                    </datalist>
+
+                
+                <br>
+                <input type="submit" value="Submit">
+        </form>
+    </section>
+
+</article>
+
+
+
+</html>

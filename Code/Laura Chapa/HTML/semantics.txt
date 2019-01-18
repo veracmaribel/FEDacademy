@@ -1,0 +1,21 @@
+Audios need transcription.
+
+Images should only be placed as background not css. A text should be hidden behind the bg image with the description.
+
+No audios in websites, and if needed, a quick way to silence should be implemented.
+
+Forms should not only be colors for validation, also images with a check.
+
+Alt attribute should always be used.
+
+All errors should be on text in forms.
+
+Abbreviations need attribute to show all.
+
+Set language in webpage.
+
+Elements should have a coherent order.
+
+Respect header hierachy.
+
+navbar, video, form with submit, 2 articles, 2 images.

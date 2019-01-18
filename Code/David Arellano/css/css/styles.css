@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Alice|Cantarell|Roboto");
+.head h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px; }
+.head .title {
+  margin: auto;
+  color: red;
+  font-family: "Alice", serif; }
+.head .title:Before {
+  Content: "[";
+  margin-right: 2px;
+  font-size: 25px;
+  font-weight: 400; }
+.head .title:After {
+  content: "]";
+  margin-left: 2px;
+  font-size: 25px;
+  font-weight: 500; }
+
+.center {
+  text-align: center; }
+
+/* BACKGROUNDS */
+.img1 {
+  background-image: url("http://en.fonditos.com/includes/imagen.php?ruta=/wallpapers/1920x1200/10201.jpg&nombre=palacio_de_moscu-1920x1200.jpg"); }
+
+.img2 {
+  background-image: url("http://viniliza.com/wp-content/uploads/ciudad-171.jpg"); }
+
+.img3 {
+  background-image: url("http://1.bp.blogspot.com/_cFCM7vN9kIE/S_cah5xU_aI/AAAAAAAABDU/zk_fn-IA36w/s1600/sydney.jpg"); }
+
+.img4 {
+  background-image: url("http://s1.1zoom.me/b5050/74/342323-svetik_1280x1024.jpg"); }
+
+.comment {
+  font-size: 25px;
+  padding-bottom: 10px; }
+  .comment span {
+    padding-left: 5px; }
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: 1px 1px black, -1px 1px black, 1px -1px black;
+  height: 350px;
+  padding: 5px;
+  font-size: 20px; }
+  .img1 h3,
+  .img2 h3,
+  .img3 h3,
+  .img4 h3 {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 1px black, -1px 1px black, 1px -1px black;
+    margin-bottom: 0; }
+  .img1 .fleft,
+  .img2 .fleft,
+  .img3 .fleft,
+  .img4 .fleft {
+    position: absolute;
+    bottom: 10px; }
+  .img1 .fright,
+  .img2 .fright,
+  .img3 .fright,
+  .img4 .fright {
+    position: absolute;
+    bottom: 10px;
+    right: 10px; }
+  .img1 .border,
+  .img2 .border,
+  .img3 .border,
+  .img4 .border {
+    width: 0;
+    height: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    transition: width 2s; }
+  .img1 :hover .border,
+  .img2 :hover .border,
+  .img3 :hover .border,
+  .img4 :hover .border {
+    width: 50%; }
+
+.bk {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0; }
+
+.img1:hover > div > div > .bk {
+  opacity: 0.6;
+  transition: 0.5s; }
+
+.card {
+  z-index: 1; }

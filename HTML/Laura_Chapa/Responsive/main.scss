@@ -1,0 +1,131 @@
+$playfair: 'Playfair Display';
+$source: 'Source Sans Pro';
+$base-size: 20px;
+$separator: 10px;
+
+@mixin background($image) {
+  background: url($image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+$one:'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80';
+
+$two: 'https://images.unsplash.com/photo-1476673160081-cf065607f449?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80';
+
+$three: 'https://images.unsplash.com/photo-1531512073830-ba890ca4eba2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=844&q=80';
+
+$four: 'https://images.unsplash.com/photo-1519817914152-22d216bb9170?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=401&q=80';
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%}
+
+* {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $playfair;
+  font-weight: bold;
+}
+
+div, p, span, small {
+  font: {
+    family: $source;
+    size: $base-size - 6;
+  }
+}
+
+i {
+  margin: 0 5px;
+}
+  
+#main-title {
+   margin-top: 25px;
+   margin-bottom: 30px;
+  .frame {
+    font-size: $base-size - 5;
+    color: red;
+    padding: 8px;
+    position: relative;
+  
+  &:hover:after, &:hover:before {
+    width: 10px;
+    border-width: 1.5px;
+  }
+  
+  &:after, &:before {
+    border: 1px solid red;    
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    width: 5px;
+    transition: width 0.8s ease;
+  }
+  
+  &:after {
+    border-left: none;
+    right: 0;
+  }
+  
+  &:before {
+    border-right: none;
+    left: 0;
+  }
+  }
+  h2 {
+    font-size: $base-size * 2;
+    margin-top: 15px;
+  }
+}
+
+.square {
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.8s ease;
+  h3 {
+    font-size: $base-size * 1.5;
+    margin: ($base-size - 5) 0;
+  }
+  
+  div {
+    margin-bottom: $separator;
+  }
+  
+  small {
+    font-size: $base-size - 8;
+    letter-spacing: 2px;
+  }
+  
+  .line {
+    height: 3px;
+    width: 0;
+    transition: width 1s ease;
+  }
+  
+  &:hover .line {
+    width: 20%;
+  }
+  
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+
+#one {
+  @include background($one);
+}
+
+#two {
+  @include background($two);
+}
+
+#three {
+  @include background($three);
+}
+
+#four {
+  @include background($four);
+}

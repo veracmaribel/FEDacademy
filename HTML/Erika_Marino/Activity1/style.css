@@ -1,0 +1,68 @@
+body{
+	font-family: Verdana;
+
+}
+
+.header{
+	background-color: #DC143C;
+	padding: 10px 5px;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a{
+	text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+}
+
+.menu ul li a:hover{
+	background-color: #F08080;
+	border-radius: 15px;
+}
+
+h1{
+	text-align: center;
+}
+.content{
+	padding: 10px 20px;
+}
+
+.images{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	width: 450px;
+	height: 300px;
+}
+
+.principal{
+	background-image: url("C:/Users/FED Academy/Desktop/Activity1/Images/616.png");
+}
+
+.ultimate{
+	background-image: url("C:/Users/FED Academy/Desktop/Activity1/Images/1610.jpg");
+}
+
+.mcu{
+	background-image: url("C:/Users/FED Academy/Desktop/Activity1/Images/mcu.jpg");
+}
+
+span{
+	display: none;
+}
+
+.suscribete{
+	background-color: #F08080;
+	padding: 20px 50px;
+	border-radius: 15px;
+}
+
+video{
+	
+
+}

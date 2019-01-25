@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+
+        * {
+            font-family: helvetica, arial;
+        }
+
+        p {
+            padding:0;
+            margin:0;
+        }
+
+        body {
+            padding-top: 60px;
+        }
+
+        header {
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                padding: 5px;
+                background-color: orangered;
+                box-shadow: 0px 5px 5px -3px  black;
+            }
+
+            header > p {
+                font-size: 18px;
+                letter-spacing: 2px;
+            }
+
+            nav {
+                font-size: 0;
+                text-align: center;
+            }
+
+            nav > button {
+                display: inline-block;
+                margin: 2px;
+                padding: 5px;
+                font-size: 16px;
+                color: white;
+                background-color: transparent;
+                border-radius: 3px;
+                border: 1px solid white;;
+                cursor: pointer;
+            }
+
+            nav > button:hover {
+                margin-right: 15px;
+                margin-left: 15px;
+                transition: 0.5s;
+            }
+
+            .text-center {
+                text-align:center;
+            }
+
+            .display-block {
+                display:block;
+            }
+
+            .margin-auto {
+                margin:auto;
+            }
+
+            article {
+                padding: 10px 0;
+            }
+
+            .dog {
+               background-image: url("C:/Users/FED Academy/Desktop/dog.jpg");
+            }
+
+            .cat {
+                background-image: url("C:/Users/FED Academy/Desktop/cat.jpg");
+            }
+
+            .images_wrapper {
+                text-align: center;
+            }
+
+            .images {
+                display: inline-block;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 300px;
+                height: 300px;
+            }
+
+            fieldset {
+                margin: auto;
+                width: 300px;
+            }
+
+            form > div {
+                padding: 10px;
+            }
+
+        </style>
+</head>
+
+<body>
+
+    <header>
+        <p>Website name</p>
+
+        <nav>
+            <button type="button">Sports</button>
+            <button type="button">Cinnema</button>
+            <button type="button">News</button>
+        </nav>
+    </header>
+
+
+    <article>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus leo nisi, feugiat volutpat est rutrum,
+        porta maximus velit. Aenean lorem neque, convallis congue lacus sed, gravida fringilla erat. Etiam ut
+        consequat massa. Nulla eget varius magna. Aenean commodo justo vitae sapien congue, et volutpat arcu egestas.
+    </article>
+
+
+    <article>
+        Fusce dictum orci gravida molestie congue. Mauris vitae erat sit amet nunc fringilla elementum.
+        Nam convallis purus vitae volutpat accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Aenean viverra condimentum sem, a placerat velit accumsan et. Sed luctus cursus magna. Praesent
+        tristique interdum diam. Aliquam rhoncus sollicitudin ornare. Nam placerat elit sem, sit amet tincidunt
+        dui sagittis ut. Phasellus condimentum, ex sed tincidunt ullamcorper, lacus tortor convallis nunc, ut
+        ultrices leo felis at tellus. Donec tristique nulla non ante fringilla sollicitudin. Donec porttitor
+        scelerisque sollicitudin. Nunc semper, nunc nec lacinia hendrerit, lorem magna sollicitudin nisl,
+        ac ornare urna felis nec diam. Cras sed leo nec neque porttitor consectetur.
+    </article>
+
+
+    
+
+    <fieldset>
+            <legend><strong>Form Information</strong></legend>
+            <form method="post" action="">
+                <div>
+                    Name:
+                    <input type="text" name="name">
+                </div>
+    
+                <br>
+    
+                <div>
+                    Surname:
+                    <input type="text" name="surname">
+                </div>
+    
+                <br>
+                <button type="submit" class="display-block margin-auto">Click and reload page</button>
+            </form>
+        </fieldset>
+
+
+    <h3 class="text-center">Here are 2 images</h3>
+    <div class="images_wrapper">
+        <img class="images dog" alt="">
+        <img class="images cat" alt="">
+    </div>
+
+
+    <h3 class="text-center">Here is 1 video</h3>
+    <video width="320" controls class="display-block margin-auto" preload="metadata">
+        <source src="C:/Users/FED Academy/Desktop/lalo/dog.mp4" type="video/mp4">
+        <track kind="subtitles" srclang="en" label="English" src="C:/Users/FED Academy/Desktop/lalo/dog.vtt" default="">
+        Your browser does not support the video tag.
+    </video>
+
+</body>
+
+</html>

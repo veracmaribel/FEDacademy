@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+span {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+}
+
+.iuno {
+    background-image: url("../img/gatitoblanco.jpg");
+}
+
+.idos {
+    background-image: url("../img/gatitoamarillo.jpg");
+}
+
+/*** NAV BARR ***/
+nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: royalblue;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: right;
+}
+
+logo {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: darkblue;
+}
+
+/*** CONTENIDO ***/
+div {
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.uno {
+    order: 1;
+    -webkit-order: 1;
+}
+
+.dos {
+    order: 2;
+    -webkit-order: 2;
+}
+
+/* clearfix */
+  
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1;
+}

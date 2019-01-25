@@ -1,0 +1,12 @@
+ul{
+    overflow: hidden;
+    background-color: black;
+}
+li{
+    display: inline-block
+}
+li,a{
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
